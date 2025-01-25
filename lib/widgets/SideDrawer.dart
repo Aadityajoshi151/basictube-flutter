@@ -1,3 +1,4 @@
+import 'package:basictube/widgets/FolderView.dart';
 import 'package:flutter/material.dart';
 import '../Constants.dart' as constants;
 
@@ -13,8 +14,8 @@ class _SideDrawerState extends State<SideDrawer> {
   Widget build(BuildContext context) {
     return Drawer(
         child: ListView(
-          children: const <Widget>[
-            Padding(
+          children: <Widget>[
+            const Padding(
               padding: EdgeInsets.all(10),
               child: ListTile(
                 title: Text(constants.APP_NAME,
@@ -25,36 +26,36 @@ class _SideDrawerState extends State<SideDrawer> {
                 trailing: Text("v${constants.APP_VERSION}",),
               ),
             ),
-            Divider(),
-            ListTile(
+            const Divider(),
+            const ListTile(
               leading: Icon(Icons.home),
               title: Text("Home"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.favorite),
               title: Text("Favourites"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.sell),
               title: Text("Tags"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.refresh),
               title: Text("Scan Library"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.upgrade),
               title: Text("Check for Updates"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.videocam),
               title: Text("Surprise Me"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.settings),
               title: Text("Settings"),
             ),
-            Divider()
+            FolderView()
           ],
         ),
       );
