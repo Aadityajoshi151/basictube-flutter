@@ -1,3 +1,4 @@
+import 'package:basictube/widgets/SearchingBar.dart';
 import 'package:flutter/material.dart';
 import 'package:basictube/widgets/SideDrawer.dart';
 
@@ -14,7 +15,12 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
       ),
-      drawer: SideDrawer()
+      drawer: SideDrawer(),
+      body: Column(
+        children: [
+        SearchingBar(),
+        ],
+      ),
     );
   }
 }
