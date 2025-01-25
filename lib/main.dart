@@ -13,7 +13,7 @@ class BasicTube extends StatelessWidget {
     return MaterialApp(
       title: constants.APP_NAME,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
         useMaterial3: true,
       ),
       home: const HomePage(),

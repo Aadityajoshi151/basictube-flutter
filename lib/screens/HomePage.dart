@@ -1,5 +1,6 @@
 import '../Constants.dart' as constants;
 import 'package:flutter/material.dart';
+import 'package:basictube/widgets/SideDrawer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,11 +14,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(constants.APP_NAME),
       ),
-      body: const Center(
-        child: Text('Hello, World!'),
-      ),
+      drawer: SideDrawer()
     );
   }
 }
